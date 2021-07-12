@@ -786,9 +786,6 @@ body {
 
 .projects-lits-item {
 
-  position: relative;
-  overflow: hidden;
-
   flex-basis: calc((100% / 3) - 30px);
 
   margin-left: var(--project-list-gap);
@@ -806,6 +803,19 @@ body {
 
 .project-deck {
 
+  position: relative;
+  overflow: hidden;
+
+}
+
+.project-deck:hover .deck-text {
+
+  transform: translateY(0);
+
+}
+
+.deck-text {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -816,15 +826,6 @@ body {
   transition: transform 250ms ease;
 
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.projects-lits-item:hover .project-deck {
-
-  transform: translateY(0);
-
-}
-
-.deck-text {
 
   padding: 24px 63px;
 
