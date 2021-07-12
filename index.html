@@ -65,9 +65,20 @@
                 </h1>
 
                 <!-- КНОПКА-ГЕРОЙ -->
-                <button type="button" class="alpha-button">Заказать услугу</button>
+                <button type="button" class="alpha-button" data-modal-open>Заказать услугу</button>
         </section>
 
+        <!-- --------------МОДАЛКА---------- -->
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis recusandae fugiat, qui doloribus facere minus consequatur minima sunt sint a maxime repellat, quibusdam ipsum ad dolorum nisi, perspiciatis animi! Rerum.
+                    Sit pariatur dolore nemo accusamus? Reprehenderit delectus, eveniet minus neque quae debitis! Repudiandae recusandae nobis a, optio expedita ipsum sed fugit quasi hic officia atque placeat ea quas neque beatae.
+                </p>
+                <button data-modal-close>Close</button>
+            </div>
+        </div>
 
         <!-- ОСОБЕННОСТИ -->
         <section class="features">
@@ -140,12 +151,33 @@
                 <ul class="works-list list">
                     <li class="works-list-item">
                         <img src="images/box-1.JPG" alt="ipad with keyboard" width="370" height="294">
+
+                        <div class="works-slogan">
+
+                            <h3 class="works-subtitle">Десктопные приложения</h3>
+
+                        </div>
+                        
                     </li>
                     <li class="works-list-item">
                         <img src="images/box-2.JPG" alt="laptop" width="370" height="294">
+
+                        <div class="works-slogan">
+
+                            <h3 class="works-subtitle">Мобильные приложения</h3>
+
+                        </div>
+
                     </li>
                     <li class="works-list-item">
                         <img src="images/box-3.JPG" alt="ipad" width="370" height="294">
+
+                        <div class="works-slogan">
+
+                            <h3 class="works-subtitle">Дизайнерские решения</h3>
+
+                        </div>
+
                     </li>
                 </ul>
             </div>
@@ -423,6 +455,8 @@
 
         </section>
 
+
+        <!------------ НАШЫ-КЛИЕНТЫ ---------------->
         <section class="clients">
             <div class="container">
 
@@ -592,6 +626,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
