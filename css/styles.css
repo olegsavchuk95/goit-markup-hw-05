@@ -62,6 +62,76 @@ body {
   text-decoration: none;
 }
 
+
+/* --------------МОДАЛКА---------- */
+
+.backdrop {
+
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  z-index: 2;
+
+}
+
+.is-hidden {
+
+  opacity: 0;
+
+  pointer-events: none;
+
+}
+
+.modal {
+
+  position: absolute;
+
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  min-height: 581px;
+
+  background: #FFFFFF;
+
+  border-radius: 4px;
+
+}
+
+.close-button {
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-button:hover {
+
+  color: var(--accent-color);
+
+  cursor: pointer;
+
+}
+
 /* WebStudio colors */
 
 .blue-word {
@@ -249,10 +319,10 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9em;
+  letter-spacing: 0.06em;
+  
   border-radius: 4px;
   border: none;
-
-  letter-spacing: 0.06em;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -355,6 +425,8 @@ body {
 
   background: rgba(47, 48, 58, 0.8);
 
+  z-index: 0;
+
 }
 
 .works-subtitle {
@@ -390,6 +462,7 @@ body {
 .team-list {
 
   display: flex;
+
 }
 
 .team-list-item {
@@ -688,6 +761,9 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   letter-spacing: 0.03em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter li :hover,
@@ -713,6 +789,9 @@ body {
 
   margin-left: var(--project-list-gap);
   margin-top: var(--project-list-gap);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-lits-item:hover {
